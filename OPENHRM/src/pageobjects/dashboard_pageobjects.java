@@ -7,7 +7,12 @@ public class dashboard_pageobjects
 {
 	
 	@FindBy(xpath = "//div[@id='task-list-group-panel-menu_holder']//following::td[1]")
-	public static WebElement pendingleaveRequest;
+	private static WebElement pendingleaveRequest;
 	
 	
+	public static WebElement getpendingLeaveRequest()
+	{
+		return pendingleaveRequest;
+		
+	}
 }

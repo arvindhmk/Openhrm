@@ -29,7 +29,7 @@ public class Test_Pending_Leave_Request extends commonfunction
 		login();
 		log.info("Getting pending leave details");
 		PageFactory.initElements(driver, dashboard_pageobjects.class);
-		String Actualtext = dashboard_pageobjects.pendingleaveRequest.getText();
+		String Actualtext = dashboard_pageobjects.getpendingLeaveRequest().getText();
 		Assert.assertEquals(Actualtext, "No Records are Available");
 		log.info("Verifiying the Test_Pending_Leave_Request ");
 	}
